@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=1280">
+<title>BitFx</title>
+<link rel="icon" href="/bitfx-images/favicon.jpg">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+<link href='styles/animate.css' rel='stylesheet' type='text/css'>
+<link href='/bitfx-css/registration-success.css' rel='stylesheet' type='text/css'>
+<link href='/bitfx-css/hover.css' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='styles/setting2.js' type='text/javascript'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+	var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+	
+	function GetClock(){
+	var tzOffset = 0;//set this to the number of hours offset from UTC
+	
+	var d=new Date();
+	var dx=d.toGMTString();
+	dx=dx.substr(0,dx.length -3);
+	d.setTime(Date.parse(dx))
+	d.setHours(d.getHours()+tzOffset);
+	var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+	var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+	if(nhour==0){ap=" AM";nhour=12;}
+	else if(nhour<12){ap=" AM";}
+	else if(nhour==12){ap=" PM";}
+	else if(nhour>12){ap=" PM";nhour-=12;}
+	
+	if(nmin<=9) nmin="0"+nmin;
+	
+	document.getElementById('clockbox').innerHTML= tmonth[nmonth]+"- 2019 "+ndate+" "+nhour+":"+nmin+ap+"";
+	}
+	
+	window.onload=function(){
+	GetClock();
+	setInterval(GetClock,1000);
+	}
+</script>
+
+
+<script src="//code.jivosite.com/widget/eRLcpH4ajG" async></script>
+</head>
+<body>
+<div class="wrapper">
+  
+  <div class="bannerwrap insideheaders">
+    <div class="container">
+      <div class="row">
+        <div class="logowrap">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="servertime bounceInDown wow">
+              <div class="icon"><img src="styles/images/clock.png" alt=""></div>
+               Server time <span id="clockbox">July 25, 14:00</span></div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="logo bounceInDown wow"><a href="/bitfx-html/Home.html"><img src="styles/images/logo.png" alt=""></a></div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="headercontacts bounceInDown wow">
+              <div class="icon"><img src="styles/images/topemail.png" alt=""></div>
+              e-mail: <span>admin@sitename.com</span></div>
+            <div class="headercontacts bounceInDown wow">
+              <div class="icon"><img src="styles/images/topphone.png" alt=""></div>
+              Phone: <span>+Coming Soon</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mainmenu">
+            <div class="nav_wrap">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
+              <a class="navbar-brand page-scroll hide" href="/bitfx-html/Home.html"><img src="styles/images/logo.png" alt="" /></a>
+              <div class="collapse navbar-collapse zoomIn wow" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="/bitfx-html/Home.html">HOME</a></li>
+                  <li><a href="?a=cust&page=about">ABOUT US</a></li>
+                  <li><a href="?a=faq">faq</a></li>
+                  <li><a href="?a=rules">rules</a></li>
+                  <li><a href="?a=cust&page=rating">rate us</a></li>
+                  <li><a href="?a=cust&page=banners">banners</a></li>
+                  <li><a href="?a=support">contact us</a></li>
+                                        <li class="register"><a href="/bitfx-html/SignUp.html">register</a></li>
+                    <li class="login"><a href="?a=login">member login</a></li>
+                                                      </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mainbanner">
+          <div class="col-lg-4">
+            <div class="bannertexts">
+<h1>Registration completed!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="inside_wrap zoomIn wow">
+  <div class="inside_inner">
+    <div style="text-align:center;">       
+
+
+
+<font color="#F7A908"><h3>Thank you for registration!</h3></font><br>
+
+<h5>Thank you for joining our program.<br>
+You are now an official member of this program. You can login to your account to start investing with us and use all the services that are available for our members.
+<br>
+<br>
+
+<b>Important:</b> Do not provide your login and password to anyone!</h5>
+
+</div>
+    </div>
+  </div>
+</div>
+<div class="footerwrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footerlogo">
+          <p><img src="styles/images/logo.png" alt=""></p>
+          <p>&copy; 2019 marcroforex.com All Rights Reserved</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footerlinks">
+          <h3>useful links:</h3>
+          <ul>
+            <li><a href="?a=home">HOME </a></li>
+            <li><a href="?a=cust&page=about">ABOUT US</a></li>
+            <li><a href="?a=faq">faq</a></li>
+            <li><a href="?a=rules">rules</a></li>
+            <li><a href="?a=cust&page=rating">rate us</a></li>
+            <li><a href="?a=support">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footeraddress">
+          <h3>Registered Office Address:</h3>
+          <p class="footerlocation">60 Threadneedle St
+            LONDON, EC2R 8HP, UNITED KINGDOM</p>
+          <p class="footeremail">ADMIN@sitename.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footerbottom">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footerphone">phone: <strong>+Coming Soon</strong></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="footerreg">registered UK company: <strong>#123456</strong><a href="#" class="hvr-shrink" data-toggle="modal" data-target="#myModal">view certificate</a></div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="footersocial"><span lang="icon"><a href="#"><img src="styles/images/facebookicon.png" alt=""></a></span> <span lang="icon"><a href="#"><img src="styles/images/instagramicon.png" alt=""></a></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog"> 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Company Certificate</h4>
+      </div>
+      <div class="modal-body">
+        <p><img src="styles/images/cert.jpg" alt="" /></p>
+      </div>
+      <div class="modal-footer"> </div>
+    </div>
+  </div>
+</div>
+</body></html> 
